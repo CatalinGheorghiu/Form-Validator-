@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    width: 400px;
+    
+}
+
+.form-control {
+    margin: 15px 0;
+    position: relative;
+    padding: 10px 0;
+}
+
+.form-control label {
+    display: inline;
+    font-weight: 700;
+    color: #474747;
+    
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    height: 39px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid rgb(139, 139, 139);
+    padding: 0 20px;
+    font-size: 16px;
+    
+}
+
+.form-control input:focus {
+    outline: 0;
+    border: 2px solid #cccccc;
+}
+
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control.success input {
+    border: 1px solid green;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.btn-submit {
+    text-decoration: none;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: rgb(7, 178, 245);
+    border: 2px solid rgb(7, 178, 245);
+}
+.btn-submit:hover {
+    background-color: rgb(39, 150, 241);
+    cursor: pointer;
+}
